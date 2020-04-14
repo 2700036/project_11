@@ -1,0 +1,81 @@
+.place-card__like-icon {
+  background: url(../../../images/like-inactive.svg) center no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 21px;
+  height: 19px;
+  cursor: pointer;
+  transition: transform .3s linear;
+  position: relative;
+}
+
+.place-card__like-icon_liked {
+  background-image: url(../../../images/like-active.svg);
+}
+
+.place-card__like-icon:hover {
+  transform: scale(1.03);
+
+}
+
+.place-card__like-q {
+  margin-bottom: 0px;
+margin-top: 0px;
+}
+
+.like-bubble {
+margin: 20px;
+display: inline-block;
+position: absolute;
+width: 150px;
+height: auto;
+padding: 0px 15px;
+background-color: white;
+border-radius: 10px;
+z-index: 5;
+top: -17px;
+left: 13px;
+display: none; 
+border: lightgray 1px solid;
+opacity: 0.97;
+box-shadow: 10px 7px 10px rgba(0, 0, 0, .7);
+
+}
+
+.like-bubble:before {
+	content: ' ';
+position: absolute;
+width: 0;
+height: 0;
+left: -21px;
+right: auto;
+top: 5px;
+z-index: 6;
+bottom: auto;
+border: 10px solid;
+  
+border-color: lightgray lightgray transparent transparent;
+}
+.like-bubble:after{
+	content: ' ';
+position: absolute;
+width: 0;
+height: 0;
+
+right: auto;
+top: 6px;
+left: -18px;
+z-index: 6;
+bottom: auto;
+border: 10px solid;
+    
+border-color: white white transparent transparent;
+}
+.like-bubble-likes {
+  font-size: 10px;
+}
+
+.like-bubble-shown{
+  display: flex;
+
+}
