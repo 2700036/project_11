@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // Подключили к проекту плагин
 const HtmlWebpackPlugin = require("html-webpack-plugin");
