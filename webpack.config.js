@@ -33,13 +33,20 @@ module.exports = {
       {
         test: /\.(png|jpg|gif|ico|svg)$/,
         use: [
-          "file-loader?name=../images/[name].[ext]", // указали папку, куда складывать изображения
+          "file-loader?name=./images/[name].[ext]", // указали папку, куда складывать изображения
           {
             loader: "image-webpack-loader",
-            options: {}
+            options: {
+              bypassOnDebug: true,
+              disable: true,
+            }
           }
         ]
-      }
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=./vendor/[name].[ext]'
+    }
     ]
   },
   plugins: [
