@@ -151,4 +151,3 @@ import {FormValidator} from './FormValidator.js';
     }
   });
   window.addEventListener("click", close);
-
