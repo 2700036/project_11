@@ -1,4 +1,5 @@
-class PopupEdit extends Popup {
+import {Popup} from './Popup.js';
+export class PopupEdit extends Popup {
   
   constructor(pickElem, popup, someApi, userInfo) {
     super(pickElem, popup);
@@ -33,8 +34,7 @@ class PopupEdit extends Popup {
         event.target.querySelector(".popup__input_user_name").value,
         event.target.querySelector(".popup__input_user_about").value
       )     
-      .then(res => {
-        console.log(res);
+      .then(res => {        
         this.api.saveUserPhoto(event.target.querySelector(".popup__input_user_ava").value)
         .then(data => { 
          this.setUserInfo(data);

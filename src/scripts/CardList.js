@@ -1,4 +1,5 @@
-class CardList {
+import {Card} from './Card.js';
+export class CardList {
   constructor(container, someApi, newCard, userInfo) {
     this.container = container;
     this.api = someApi;
@@ -18,7 +19,8 @@ class CardList {
         }
         return Promise.reject(`Ошибка: ${res.status}`);
       })
-      .then(res => {
+      .then(res => { 
+        console.log('стоит фильтр карточек по количеству лайков не менее 5');
         res.forEach(el => {
           const usersLikes = [];          
           const usersIDs = []; 
@@ -27,7 +29,8 @@ class CardList {
           }               
           el.likes.forEach(e => {usersIDs.push(e._id); usersLikes.push(e.name)})
 
-          if (usersLikes.length>4){ // филтрация вывода карт по кол-ву лайков
+          if (usersLikes.length>4){
+             // филтрация вывода карт по кол-ву лайков
 
           const card = this.card.createCard(el); 
           Card.likesNumbers(card, el);     

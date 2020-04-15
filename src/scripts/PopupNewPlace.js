@@ -1,4 +1,6 @@
-class PopupNewPlace extends Popup {
+import {Popup} from './Popup.js';
+import {Card} from './Card.js';
+export class PopupNewPlace extends Popup {
   constructor(pickElem, popup, list, objCard, someApi) {
     super(pickElem, popup);
     this.list = list;

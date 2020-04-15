@@ -1,4 +1,4 @@
-class UserInfo {
+export class UserInfo {
   constructor() {
     this.updateUserInfo = this.updateUserInfo.bind(this);
     this.setUserInfo = this.setUserInfo.bind(this);
