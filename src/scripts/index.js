@@ -2,12 +2,20 @@ import '../pages/index.css';
 import {Api} from './API.js';
 import {Card} from './Card.js';
 import {CardList} from './CardList.js';
+<<<<<<< HEAD
+=======
+import {Popup} from './Popup.js';
+>>>>>>> 733dbd8050a11c539024d6112a977a746e2ec84b
 import {PopupNewPlace} from './PopupNewPlace.js';
 import {PopupEdit} from './PopupEdit.js';
 import {PopupZoom} from './PopupZoom.js';
 import {UserInfo} from './UserInfo.js';
 import {FormValidator} from './FormValidator.js';
+<<<<<<< HEAD
  
+=======
+(function() {  
+>>>>>>> 733dbd8050a11c539024d6112a977a746e2ec84b
   const placesList = document.querySelector(".places-list");
   const root = document.querySelector(".root");
 
@@ -151,4 +159,8 @@ import {FormValidator} from './FormValidator.js';
     }
   });
   window.addEventListener("click", close);
+<<<<<<< HEAD
 
+=======
+})();
+>>>>>>> 733dbd8050a11c539024d6112a977a746e2ec84b
