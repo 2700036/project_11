@@ -1,6 +1,6 @@
 {
-  "name": "praktikum",
-  "homepage": "https://2700036.github.io/test/",
+  "name": "project_11",
+  "homepage": "https://2700036.github.io/project_11/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
     "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
   },
-  "author": "",
+  "author": "Sergey Biryukov",
   "license": "ISC",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
