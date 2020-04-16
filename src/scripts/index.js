@@ -2,20 +2,14 @@ import '../pages/index.css';
 import {Api} from './API.js';
 import {Card} from './Card.js';
 import {CardList} from './CardList.js';
-<<<<<<< HEAD
-=======
-import {Popup} from './Popup.js';
->>>>>>> 733dbd8050a11c539024d6112a977a746e2ec84b
 import {PopupNewPlace} from './PopupNewPlace.js';
 import {PopupEdit} from './PopupEdit.js';
 import {PopupZoom} from './PopupZoom.js';
 import {UserInfo} from './UserInfo.js';
 import {FormValidator} from './FormValidator.js';
-<<<<<<< HEAD
+
+const ApiUrl = process.env.NODE_ENV === 'development' ? 'http://praktikum.tk/cohort9/' : 'https://praktikum.tk/cohort9/';
  
-=======
-(function() {  
->>>>>>> 733dbd8050a11c539024d6112a977a746e2ec84b
   const placesList = document.querySelector(".places-list");
   const root = document.querySelector(".root");
 
@@ -29,7 +23,7 @@ import {FormValidator} from './FormValidator.js';
   const editForm = document.querySelector(".popup__form-edit");
 
   const api = new Api({
-    baseUrl: "https://praktikum.tk/cohort9/",
+    baseUrl: ApiUrl,
     headers: {
       authorization: "0f96e3cb-2b6c-4da4-8233-9011a7d4981c",
       "Content-Type": "application/json"
@@ -159,8 +153,3 @@ import {FormValidator} from './FormValidator.js';
     }
   });
   window.addEventListener("click", close);
-<<<<<<< HEAD
-
-=======
-})();
->>>>>>> 733dbd8050a11c539024d6112a977a746e2ec84b
