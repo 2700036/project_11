@@ -7,6 +7,8 @@ import {PopupEdit} from './PopupEdit.js';
 import {PopupZoom} from './PopupZoom.js';
 import {UserInfo} from './UserInfo.js';
 import {FormValidator} from './FormValidator.js';
+
+const ApiUrl = process.env.NODE_ENV === 'development' ? 'http://praktikum.tk/cohort9/' : 'https://praktikum.tk/cohort9/';
  
   const placesList = document.querySelector(".places-list");
   const root = document.querySelector(".root");
@@ -21,7 +23,7 @@ import {FormValidator} from './FormValidator.js';
   const editForm = document.querySelector(".popup__form-edit");
 
   const api = new Api({
-    baseUrl: "https://praktikum.tk/cohort9/",
+    baseUrl: ApiUrl,
     headers: {
       authorization: "0f96e3cb-2b6c-4da4-8233-9011a7d4981c",
       "Content-Type": "application/json"
